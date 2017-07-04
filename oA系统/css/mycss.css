@@ -1,0 +1,21 @@
+* {margin: 0; padding: 0}
+.img1{width: 50px; height: 50px}
+.mg-10{margin-bottom: 15px}
+.cont {width: 100%; height: 735px; background: #6f5499}
+.img2 { width: 260px; height: 270px; display: block; margin: 120px auto 0}
+.h1 {color: #fff; font-weight: bolder; font-size: 50px; text-align: center; margin-bottom: 38px}
+.cont p {text-align: center; color: #fff}
+.h3{text-align: center; height: 100px; font-weight: bolder; font-size: 30px}
+.jieshao {padding: 105px 0}
+.lb {height: 665px; background: #6f5499}
+.lc {margin-top: 100px}
+.biaodan {padding: 110px 0}
+.h2 {text-align: center; height: 110px; font-weight: bolder; font-size: 30px}
+
+.maxfooter1 {height: 242px; background: #2d3e50}
+.maxfooter1 p,h3 {color: #fff}
+.maxfooter1 h3 {font-weight: bolder; margin-top: 70px}
+.maxfooter1 .p3 {padding: 130px 0 0 0 }
+.yuan {border-radius: 50%; border: 2px solid #fff;height: 50px; width: 50px; padding: 10px }
+.maxfooter2{height: 70px; background: #243141}
+.maxfooter2 p {text-align: center; color: #fff; line-height: 70px;}

@@ -1,0 +1,25 @@
+*{margin: 0; padding: 0; box-sizing: border-box}
+.row{height: 90px; border: 1px solid black; margin: 0 -15px}
+
+.box{width: 100%; border: 1px solid #ccc; height: 100px; margin: 0 auto; padding: 0 15px}
+[class*='col-']{
+    border: 1px solid #ccc;
+    height: 90px;
+}
+@media (min-width: 768px) {
+    .box{width:750px}
+    
+}
+
+@media (min-width: 980px) {
+    .box{width: 900px}
+    .col-md-1{width:8.333333%; float: left}
+    .col-md-8{width: 66.666666%; float: left}
+    .col-md-4{width: 33.333333%; float: left}
+    .col-md-6{width: 50%; float: left}
+}
+
+@media (min-width: 1200px) {
+    .box{width: 1200px}
+
+}

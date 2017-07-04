@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户管理</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mycss.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <style>
+
+        footer{text-align: center; padding: 15px}
+        .mar10 {margin-top: 10px}
+        .table > thead > tr > th, .table > tbody > tr > th, .table >
+        tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr
+        > td, .table > tfoot > tr > td{vertical-align: middle}
+        .ipt {width: 914px; margin-right: 33px}
+        .mar20 {margin-top: 20px}
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">OA办公系统</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li ><a href="index.html"><span class="glyphicon glyphicon-th-large"></span>&nbsp;后台管理 <span class="sr-only">(current)</span></a></li>
+                <li ><a href="user.html"><span class="glyphicon glyphicon-user"></span>用户管理</a></li>
+                <li><a href="neirong.html"><span class="glyphicon"></span>&nbsp;内容管理</a></li>
+                <li class="active"><a href="biaoqian.html">标签管理</a></li>
+                <li><a href="email.html">我的邮箱</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li> <img src="images/publish_素材/images/0.png" class="img-circle img1 img-responsive"></li>
+                <li class="dropdown">
+
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">管理员 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Action</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Action</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Action</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Action</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Action</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+    <div class="page-header">
+        <h5>TAG标签管理</h5>
+    </div>
+    <form>
+        <input type="text" id="ip" class="form-control ipt pull-left" placeholder="请输入你要添加的标签">
+        <button type="button" id="btn" class="btn btn-default">添加</button>
+    </form>
+
+    <div class="row mar20">
+        <div class="col-md-2" id="col">
+            <div class="alert alert-info alert-dismissible" role="alert">
+                <button type="button"  class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h5 id="h3">FDDSAFSAFA</h5>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        联系方式:12311111111
+    </div>
+</footer>
+</body>
+</html>
+<script>
+    var ipt = document.getElementById("ip");
+    console.log(ipt)
+    var Btn = document.getElementById("btn");
+    console.log(Btn)
+    var H3 = document.getElementById("h3");
+    var col = document.getElementById("col");
+
+    Btn.onclick = function(){
+        var oBox = document.createElement("div");
+        oBox.className = ''
+        col.appendChild(oBox)
+        document.body.appendChild(col);
+        H3.innerHTML = ipt.value;
+        col.appendChild(H3)
+    }
+
+</script>
